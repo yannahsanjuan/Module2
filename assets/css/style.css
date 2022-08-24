@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    position: relative;
+    padding: 20px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #F8C8DC;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+    color: black;
+    font-family: 'Impact', 'Monaco', 'Lucida Console', 'Lucida Handwriting', sans-serif;
+    margin-left: -20px;
+    font-style: italic;
+    background: rgb(236, 207, 168);
+    padding: 10px 100px;
+    
+}
+.header h1::after {
+    content: 'SJ';
+    color: white;
+}
+
+/*The nav bar contains the list of links*/
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/*This hides the bullet points */
+nav ul {
+    list-style-type: none;
+}
+
+/*The listed links are displayed side-by-side rather than stacked*/
+nav ul li {
+    display: inline-block;
+    margin: 0px 20px;
+    list-style-type: none;
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: grey;
+}
+
+/*All anchor text are in white*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*All paragraph have a font size of 16px*/
+p {
+    font-size: 25px;
+    font-family: 'Times New Roman', sans-serif;
+} 
+
+
+.photo {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/photo-of-me.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 400px;
+}
+
+.benefits {
+    margin-left: 36px;
+    padding: 20px;
+    clear: both;
+    width: 10%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    justify-content: right;
+}
+
+.benefit-lead, .benefit-brand, .benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.about-me, .works, .contact-me, .resume {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Monaco', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(221, 154, 165);
+    color: #ffffff;
+}
+.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img  {
+    max-height: 200px;
+}
+
+.search-engine-optimization h2, .online-reputation-management h2,  .social-media-marketing h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .content {
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+      width: 50%;
+    }
+  }
