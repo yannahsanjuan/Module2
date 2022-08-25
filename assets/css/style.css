@@ -14,12 +14,12 @@ main{
 }
 
 .header {
-    position: relative;
     padding: 20px;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #F8C8DC;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .header h1 {
@@ -31,7 +31,6 @@ main{
     font-style: italic;
     background: rgb(236, 207, 168);
     padding: 10px 100px;
-    
 }
 .header h1::after {
     content: 'SJ';
@@ -40,8 +39,7 @@ main{
 
 /*The nav bar contains the list of links*/
 nav {
-    padding-top: 15px;
-    margin-right: 20px;
+    margin-left: 700px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -66,13 +64,11 @@ nav ul li a:hover {
     color: grey;
 }
 
-/*All anchor text are in white*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
-/*All paragraph have a font size of 16px*/
 p {
     font-size: 25px;
     font-family: 'Times New Roman', sans-serif;
@@ -101,7 +97,7 @@ p {
 .content {
     width: 75%;
     display: inline-block;
-    margin-left: 400px;
+    margin-left: 200px;
 }
 
 .benefits {
@@ -131,13 +127,19 @@ p {
     max-width: 150px;
 }
 
-.about-me, .works, .contact-me, .resume {
+.about-me, .contact-me, .resume {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Monaco', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(221, 154, 165);
     color: #ffffff;
+}
+.works {
+    display: flex;
+    flex-direction: row-reverse;
+    max-height: 500px;
+    
 }
 .search-engine-optimization img, .online-reputation-management img, .social-media-marketing img  {
     max-height: 200px;
