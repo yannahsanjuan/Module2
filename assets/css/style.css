@@ -39,28 +39,18 @@ main{
 
 
 nav {
-    margin-left: 700px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-
-nav ul {
-    list-style-type: none;
-}
-
-
-nav ul li {
     display: inline-block;
-    margin: 0px 20px;
+    /*margin: 0px 20px;*/
     list-style-type: none;
     text-decoration: underline;
     font-size: 30px;
     font-weight: bold;
+    margin-left: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
 
-nav ul li a:hover {
+nav a:hover {
     color: grey;
 }
 
@@ -90,18 +80,7 @@ p {
     display: inline-block;
     margin-bottom: 40px;
     color: #ffffff;
-   /* margin-left: 200px;*/
-}
-
-.benefits {
-    margin-left: 36px;
-    padding: 20px;
-    clear: both;
-    width: 10%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
-    justify-content: right;
+    line-height: 50px;
 }
 
 .works {
@@ -122,6 +101,25 @@ p {
     font-size: 30px;
     background: tan;
     padding: 10px 70px;
+}
+
+.first img {
+    position: relative;
+    border: 10px solid black;
+    width: 90%;
+    margin-left: 10%;
+    
+}
+
+.first img:hover {
+    color: white;
+}
+
+.second img, .third img {
+    border: 10px solid black;
+    width: 60%;
+    margin-left: 20%;
+    
 }
 
 div ul {
@@ -147,7 +145,7 @@ div ul li a:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .content {
       width: 50%;
     }
